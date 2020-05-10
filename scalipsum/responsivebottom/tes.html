@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Document</title>
+<style>
+body {
+   margin: 0px;
+   margin-top: 10px;
+   padding: 0px;
+}
+nav {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   background-color: rgb(39, 39, 39);
+   overflow: auto;
+   height: auto;
+}
+.links {
+   display: inline-block;
+   text-align: center;
+   padding: 14px;
+   color: rgb(178, 137, 253);
+   text-decoration: none;
+   font-size: 17px;
+}
+.links:hover {
+   background-color: rgb(100, 100, 100);
+}
+.selected {
+   background-color: rgb(0, 18, 43);
+}
+.hamburger {
+   color: white;
+   font-weight: bolder;
+   display: none;
+}
+@media screen and (max-width: 600px) {
+nav a:not(:first-child) {
+   display: none;
+}
+nav a.hamburger {
+   float: right;
+   display: block;
+   padding: 12px;
+}
+nav.openNav a.hamburger {
+   position: absolute;
+   right: 0;
+   bottom: 0;
+}
+nav.openNav a {
+   float: none;
+   display: block;
+   text-align: center;
+
+}
+}
+</style>
+</head>
+<body>
+<nav class="bottomNav">
+<a class="links selected" href="#"> Home</a>
+<a class="links" href="#"> Login</a>
+<a class="links" href="#">Register</a>
+<a class="links" href="#"> Contact Us</a>
+<a class="links" href="#">More Info</a>
+<a class="hamburger">☰</a>
+</nav>
+<div>
+<h1>Bottom navigation menu</h1>
+</div>
+<script>
+function toggleNav() {
+   var x = document.getElementsByTagName("nav")[0];
+   if (x.className === "bottomNav") {
+      x.className += " openNav";
+   } else {
+      x.className = "bottomNav";
+   }
+}
+document.querySelector(".hamburger").addEventListener("click", toggleNav);
+</script>
+</body>
+</html>

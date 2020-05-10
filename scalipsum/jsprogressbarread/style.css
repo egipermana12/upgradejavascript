@@ -1,0 +1,51 @@
+*{
+	margin: 0;
+	padding: 0;	
+	font-family: 'Roboto', sans-serif;
+}
+
+body {
+	background: #F6F6F6;
+	text-align: center;
+}
+
+.container{
+	max-width: 800px;
+	margin: auto;
+	margin-top: 20px;
+	border: 1px solid #BDBDBD;
+	border-radius: 5px;
+	box-shadow: -1px 1px #BDBDBD;
+	background: white;
+	/*position: relative;*/
+	overflow: auto;
+}
+
+.text  {
+	padding: 10px;
+	margin: 10px;
+}
+
+.text h1 {
+	margin-bottom: 30px;
+}
+
+.text h3 {
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.text p{
+	text-align: justify;
+	margin-bottom: 20px;
+}
+
+.progress_bar{
+	height: 6px;
+	background: red;
+	position: fixed;
+	top: 0;
+	left: 0;
+	/*right: 100%;*/
+	box-shadow: 0 0 10px rgba(0,0,0,1);
+}
