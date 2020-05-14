@@ -86,8 +86,7 @@ body {
     .links {
         position: absolute;
         width: 100%;
-        bottom: 0;
-        right: -100%;
+        transform: translateY(-100%);
         background: #3e3e3e;
         flex-direction: column;
         justify-content: center;
