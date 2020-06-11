@@ -12,7 +12,7 @@ btnacakWarna.appendChild(teksTombol);
 
 btnacakWarna.setAttribute('type', 'button');
 
-btnWarna.after(btnacakWarna);
+btnWarna.before(btnacakWarna);
 
 
 btnacakWarna.addEventListener('click', () => {
