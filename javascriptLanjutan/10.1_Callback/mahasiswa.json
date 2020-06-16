@@ -1,0 +1,20 @@
+[
+    {
+        "nama" : "Sandika Galih",
+        "nrp"  : "123456",
+        "email": "sandikaga12@gmail.com",
+        "idDosenwali" : 1
+    },
+    {
+        "nama" : "Dody Feryantor",
+        "nrp"  : "123457",
+        "email": "dody111@gmail.com",
+        "idDosenwali" : 2
+    },
+    {
+        "nama" : "Erik Doank",
+        "nrp"  : "123458",
+        "email": "3rik@gmail.com",
+        "idDosenwali" : 1
+    }
+]
